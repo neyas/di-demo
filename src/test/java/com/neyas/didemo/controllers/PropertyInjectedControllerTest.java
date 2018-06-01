@@ -12,11 +12,11 @@ public class PropertyInjectedControllerTest {
     @Before
     public void setUp() {
         this.propertyInjectedController = new PropertyInjectedController();
-        this.propertyInjectedController.greetingService = new GreetingServiceImpl();
+        this.propertyInjectedController.greetingServiceImpl = new GreetingServiceImpl();
     }
 
     @Test
     public void testGreeting() {
-        assertEquals(GreetingServiceImpl.HELLO_GURUS, propertyInjectedController.sayHello());
+        assertEquals(GreetingServiceImpl.HELLO_GURUS, propertyInjectedController.sayGreeting());
     }
 }

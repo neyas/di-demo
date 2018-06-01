@@ -15,7 +15,7 @@ public class ConstructorInjectedControllerTest {
     }
 
     @Test
-    public void sayGreeting(){
+    public void testGreeting(){
         assertEquals(GreetingServiceImpl.HELLO_GURUS, constructorInjectedController.sayGreeting());
     }
 }

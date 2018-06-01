@@ -16,7 +16,7 @@ public class SetterInjectedControllerTest {
     }
 
     @Test
-    public void sayGreeting() {
+    public void testGreeting() {
         assertEquals(GreetingServiceImpl.HELLO_GURUS, setterInjectedController.sayGreeting());
     }
 }
