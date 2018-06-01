@@ -1,15 +1,11 @@
 package com.neyas.didemo.controllers;
 
-import com.neyas.didemo.services.GreetingService;
+import com.neyas.didemo.services.GreetingServiceImpl;
 
 public class PropertyInjectedController {
-    public GreetingService greetingService;
+    public GreetingServiceImpl greetingService;
 
     String sayHello() {
-        return getGreetingService().sayGreeting();
-    }
-
-    public GreetingService getGreetingService() {
-        return greetingService;
+        return greetingService.sayGreeting();
     }
 }
